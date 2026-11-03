@@ -1,4 +1,7 @@
-# 5blazers: Auto-Generate Easy, Live Spreadsheets! (AKA 5bagels)
-In an effort to make logging new runs on the [5blazers leaderboard](https://docs.google.com/spreadsheets/d/13FLybIGvOjRlVjlySvKEAetGkcp-JWZ4xT5YQ3Gsx-Y/edit?pli=1&gid=1270096530#gid=1270096530) easier, I (with my good friend Github Copilot) made two scripts. One pulls the live state of [all verified 5b level runs on Speedrun.com](https://www.speedrun.com/bfdia/levels) and compiles them into a JSON object, and the other takes that data and generates two spreadsheets (finish% and complete%) that compile the times into CSV files that can be inserted to the 5blazers data sheet.
+# 5b Rewind's Easy API Decoder! (aka 5bread)
+A fork of [KorZen10's 5bagels project](https://github.com/KorZen10/5bagels), modded specifically to suit the needs of [5b Rewind](https://randtwguy.github.io/5b-Rewind), an interactive history of BFDIA 5b speedrunning history.
 
-I made this repository public for anyone looking to use my API framework, but you'll probably have to end up cloning it and making your own changes because the current functionality is highly specialized to 5blazers and IL speedruns.
+Main Changes: 
+1) filters fullgame runs instead of ILs
+2) added converter from "values" and "category" of the API JSON to human-readable category names
+3) added converter from SRC id to username
